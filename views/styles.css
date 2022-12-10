@@ -78,9 +78,9 @@ button:hover{
 
     }
     h2{
-        margin-top: 80px;
+        margin-top: 20%;
         /* border: 1px solid black; */
-        margin-left: 65px;
+        margin-left: 10%;
         font-size: 30px;
         text-decoration: underline;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -109,10 +109,14 @@ button:hover{
  @media (max-width:420px)
 {
     h1{
-        margin-top: 8%;
+        margin-top: 10%;
     }
-    .date{
-        font-size:15px;
-        margin-right: 5px;
+    h2{
+        margin-left:5%;
+    }
+    #date{
+        font-size:20px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
