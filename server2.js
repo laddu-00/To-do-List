@@ -131,7 +131,7 @@ app.post("/home",function(req,res){
     {
         user1=body.username;
         password1=body.password;
-        Todocreds.find({user:user1,password:password1},function(err,result){
+        Todocreds.find({username:user1,password:password1},function(err,result){
             if(err)
             {
                 console.log('error');
@@ -166,7 +166,7 @@ app.post("/home",function(req,res){
             else
             {
                 console.log('deleted '+body.ip);
-                setTimeout(f,300);
+                setTimeout(f,200);
             }
         })
     }

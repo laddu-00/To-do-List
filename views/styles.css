@@ -64,7 +64,7 @@ button:hover{
     
     h1{
         font-size: 40px;
-        margin-top: -5%;
+        margin-top: 0%;
         color: rgb(117, 61, 84);
     }
     h1 i{
@@ -89,6 +89,8 @@ button:hover{
         margin-top: 15px;
         width:70%;
         margin-left: 15%;
+        font-size: 40px;
+        background-color: white;
     }
     button{
         margin-top: 50px;
@@ -104,3 +106,10 @@ button:hover{
         margin-bottom: -15%;
     }
  }
+ @media (max-width:420px)
+{
+    .list_item{
+        font-size:20px;
+        margin-right: 5px;
+    }
+}

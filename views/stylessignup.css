@@ -69,9 +69,16 @@ img{
         margin-left: 0px;
         border: none;
     }
+    .head_div{
+        margin-bottom: 18%;
+    }
     input{
         margin-left: 20%;
         width: 60%;
+    }
+    .foot{
+        font-size: 15px;
+        
     }
 
 }
