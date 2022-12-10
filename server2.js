@@ -10,12 +10,14 @@ app.use(express.static(__dirname+"/views"));////////Important to check it before
 app.listen(3200,function(){
     console.log('started');
 });
-
+mongoose.set('strictQuery', true);
 // mongoose.connect("mongodb://localhost:27017/dbproject",{useNewUrlParser:true});
 mongoose.connect(process.env.MONGO_URI,{useNewUrlParser:true})
 .then(()=>console.log('connected to db'))
 .catch(err=>console.log(err));
 // mongoose.connect("mongodb://127.0.0.1:27017/dbproject",{useNewUrlParser:true});
+
+
 const Schema1=new mongoose.Schema({
     user:String,
     password:String,
