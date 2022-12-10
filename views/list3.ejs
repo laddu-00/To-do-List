@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+html{
+    /* background-image: -webkit-linear-gradient(65deg,purple 50%,white 50%); */
+    min-height: 1000px;
+}
+.log_out{
+    margin-left: 80%;
+    width: 20%;
+    color: white;
+    background-color:lightslategrey;
+    height: 50px;
+    font-size: 120%;
+    font-weight: bold;
+    margin-bottom: -10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.log_out:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.home{
+    
+    align-self: center;
+    width:20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 40%;
+    /* height: 50px; */
+    border: 2px solid black;
+    background-color: lightcoral;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 20px;
+}
+.home:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.headdiv{
+    margin-left:30%;
+    margin-right: 30%;
+    height: max-content;
+    border: 1px solid black;
+    margin-top:2%;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 5px;
+    background-color:darkorchid;
+    color:white;
+  
+}
+.div1{
+    margin-left:30%;
+    margin-right: 30%;
+    height: fit-content;
+    border: 1px solid black;
+    margin-top:5%;
+    /* width: fit-content; */
+    background-color: white;
+    box-shadow: 5px 5px 15px 0px;
+    border-radius: 9px;
+    flex-direction: row;
+    /* padding-left: -20px; */
+    padding-right: 10px;
+}
+.items_outerdiv{
+    height: fit-content;
+    border: 1px solid red;
+}
+.item{
+    height: fit-content;
+    border: 1px solid blue;
+    width: 100%;
+    /* word-wrap: break-word; */
+    /* width: 100%; */
+}
+
+.chcbox{
+    border: 1px solid black;
+    width: 50px;
+    height:35px;
+    padding-left: -5px;
+    margin-top: 1%;
+    float: left;
+}
+.chc{
+    width:50px;
+    height:30px;
+    margin-left:-5%;
+    /* font-size: 100%; */
+    /* float: left; */
+    position:relative;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.chc:checked+span{
+    text-decoration: line-through;
+ }
+ol{
+    height: fit-content;
+    margin-bottom: 10px;
+    list-style: none;
+}
+li{
+    height: fit-content;
+    margin-bottom: 15px;
+}
+
+.list_item{
+    /* border: 1px solid black; */
+    /* flex-direction:column; */
+    /* float:right; */
+    /* margin-top: 5px; */
+    /*margin-left: 2%; */
+    position:calc();
+    margin-right: 5px;
+    word-wrap: break-word;
+    width: 89%;
+    font-size:40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* height: max-content; */
+    /* width: ; */
+    /* position:sticky; */
+}
+.hidden{
+    border: 1px solid black;
+    /* bottom: 0; */
+    /* position: relative; */
+    /* align-items: baseline; */
+    border-bottom: 2%;
+    width: 20%;
+    height:20%;
+    display: none;
+    /* align-content: flex-end; */
+    /* float: right; */
+    /* position: absolute; */
+}
+.hidden_ip{
+    width: 2px;
+    height: 2px;
+}
+.hidden button{
+    width: 2px;
+    height: 2px;
+}
+.footer{
+    border: 1px solid black;
+    /* bottom: auto; */
+     /* margin-bottom: 2%; */
+    /* height: 50px;  */
+    margin-top:auto;
+    height: 50px;
+}
+.footer input{
+    margin-left: 2%;
+    width: 75%;
+    height: 70%;
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer button{
+    margin-left: 2%;
+    width: 15%;
+    height:70%;
+    font-size: 25px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    outline: none;
+}
+#ip1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    width: 73%;
+    height: 70%;
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#ip1:focus{
+    outline: none;
+}
+#addbtn{
+    margin-left: 3%;
+    width: 15%;
+    height:55px;
+    font-size: 40px;
+    /* background-color: blueviolet; */
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    outline: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+    box-shadow: 5px 10px 15px 0px;
+    background-image: -webkit-linear-gradient(65deg,purple 50%,white 50%);
+}
+
+#addbtn:hover{
+    opacity: 0.7;
+}
+.click{
+    opacity: 0.1;
+    box-shadow: 1px 1px -10px;
+ }
+
+ @media ( min-width:701px) and ( max-width:1000px)
+{
+    .log_out{
+        font-size: 120%;
+    }
+}
+@media (max-width:700px){
+    
+    .log_out{
+        margin-left: 78%;
+        width: 22%;
+        font-size: 120%;
+    }
+    .home{
+        margin-left: 30%;
+        width: 40%;
+        font-size: 150%;
+    }
+    .headdiv{
+        /* width: 100%; */
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size:35px;
+    }
+    .div1{
+        /* width: 100%; */
+        padding-top: 10px;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 7%;
+        border: none;
+    }
+    li{
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+    .chc{
+        /* height: 40px; */
+        margin-left: -6%;
+    }
+    .list_item{
+        font-size:40px;
+        margin-right: 5px;
+    }
+}
+
+/* .footer butto */
+</style>
+<body onkeypress="key(event.key)">
+    <button class="log_out" onclick="home('log_out')">LOG-OUT</button>
+    <button class="home" onclick="home('go_home')">Back to home</button>
+    <div class="headdiv"><%=day%>, Todo-List</div>
+    <form action="/home" method="post" autocomplete="off">
+        <div class="hidden">
+                <input type="text" id="ipdate" class="hidden_ip" name="ipdate" value="<%=ipdate%>">
+                <input type="text" id="user" class="hidden_ip" name="user" value="<%=user%>">
+                <input type="text" id="password" class="hidden_ip" name="password" value="<%=password%>">
+                <button type="submit" name="btn" id='formbtn' value="btnadditem"></button>
+                <button type="submit" name="btn" id="btncheckbox" value="btncheckbox"></button>
+                <button type="submit" name="btn" id="specify_btn" value=""></button>
+                <input  type="text" class="hidden_ip" id="ip" name="ip" placeholder="Add-Item" > 
+        </div>  
+        
+    </form>
+    <div class="div1">
+    
+        <ol >
+            <% for(var i=0;i<items.length; i++){%>
+               
+              <li>  
+                    <input  type="checkbox" onclick="checkfn('<%=items[i]%>')" class="chc" >
+                    <span class="list_item"> <%=items[i]%></span>
+                
+              </li>
+            <%}%>
+        </ol>
+    
+    
+        <!-- <div class="footer">  -->
+            <input  type="text" id="ip1" name="ip" placeholder="Add-Item" autocapitalize="on" autocomplete="off" >
+            <button id="addbtn" onclick="click1(addbtn)" >+</button>
+        <!-- </div> -->
+        
+                <!-- button which is clicked when any item is added,this click is prfrmd bt js code see blw and orm data is submitted to server,now the newly 
+                inseted item will be insertd into th db because we've posted the form -->
+               
+               
+    </div>
+
+<script>
+    // function db()
+    // {
+        
+        // const  i=0;
+    //    var c=('<%=JSON.stringify(items)%>');
+        // console.log('<%=dbno%>');
+        // for(var i=0;i<'<%=dbno%>';i++)//we're getting json obj so we can nethr parse it nor displayed in th 
+        // {
+        //     document.querySelector('ol').innerHTML+=<li><input onclick='f2(i)' type='checkbox' class='chc'><span id='i'><%=items[0]%></span></li>";
+        //     console.log('hl');
+        //     // i++;
+        // }
+    // }
+
+    function home(e)
+    {
+        document.getElementById("specify_btn").value=e;
+        document.getElementById("specify_btn").click();
+    }
+    function key(key1)
+    {
+        if(key1=="Enter")
+        click1(key1);
+    }
+    function click1(id)
+    {
+        document.getElementById("addbtn").classList.add("click");
+        setTimeout(function(){addbtn.classList.remove('click');},80);
+
+        if(ip1.value!="" &&ip1.value!=" " &&ip1.value!='   ')
+        {
+            // a=document.querySelectorAll('.chc').value;
+
+            // document.querySelector("ol").innerHTML+="<li><input class='chc' type='checkbox' onchange='check(<%=day%>,<%=items[i]%>)' ><span >  "+ip.value+"</span></li>";
+            // document.querySelectorAll('li input').value=a;
+            document.getElementById("ip").value=document.getElementById("ip1").value;
+            formbtn.click();
+        }
+    }
+    function f2(c)
+    {
+        document.getElementById(c).style.textDecoration="line-through";
+    }
+
+    function checkfn(item)
+    {
+         ip.value=item;
+        console.log('fn');
+         btncheckbox.click();
+         
+    }
+
+
+    
+
+</script>
+</body>
+</html>

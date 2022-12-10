@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylessignup.css">
+    <script src="https://kit.fontawesome.com/196ee7d2dd.js" crossorigin="anonymous">
+
+    </script>
+</head>
+
+<body>
+    <form action="http://localhost:3200/signup" method="post" id="form()">
+    <div class="div1">
+        <div class="head_div">To-do-List <i class="fa-solid fa-list-check"></i></div>
+        <!-- <img src="newslogo.png"> -->
+          <input style="margin-top: 7%" type="tel" required="true" format="{0-9}[10]" placeholder="Mobile-No" name="mobile"><br>
+          <input type="text" placeholder="Full Name" name="fname" required="true"><br>
+          <!-- <input type="text" placeholder="Username" required="true" name="username"><br> -->
+          <input type="password" placeholder="Password" required="true" name="password" id="pass"><br>
+          <input type="password" placeholder="Confirm-Password" required="true" name="confirmpassword" id="cpass">
+          <div id="passdescrip" ><%=passdescrip%></div>
+          <button   id="btn" onclick="fun(cpass.value,pass.value)" name="btn" value="signup" ><b>SIGN UP</b></button><br>
+          <div class="foot">
+                
+            Already having an account? <a href="http://localhost:3200/login">Login</a>
+          </div>
+    </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+    <script src="script.js">
+      // function fun(e,f)
+      // {
+      //   if(e!=f)
+      //   {
+      //     document.getElementById("passworddescrip").innerHTML="<h2 style='color:red'>Password doesm't match</h2>"
+      //   }
+      // }
+    </script>
+    
+    
+
+
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginstyles.css">
+    <script src="https://kit.fontawesome.com/196ee7d2dd.js" crossorigin="anonymous">
+
+    </script>
+</head>
+
+<body >
+    <form action="http://localhost:3200/home" method="post" id="form">
+        <div class="div1">
+            <div class="head_div">To-do-List <i class="fa-solid fa-list-check"></i></div>
+            <!-- <img src="whatapp.png"><br><br> -->
+             
+              <input type="text" placeholder="Mobile-No" required="true" name="username" value="">
+            
+              <input type="password" placeholder="Password" required="true" name="password" value="">
+              <div id="passworddescrip"></div>
+              <button type="submit" id="btn" name="btn" value="login" ><b>LOGIN</b></button><br>
+              
+
+              <div class="foot">
+                
+                Don't have an account? <a onclick="fun()" href="file:///C:/Users/MAHESH%20REDDY/Desktop/To-Do%20List/views/signup.html">Signup</a>
+              </div>
+        </div>
+      </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+        </script>
+        <script src="script.js">
+          function fun()
+          {
+            disppressedbtn.value='showsignuppage';
+            // form.submit();
+            disppressedbtn.click();
+          }
+        </script>
+     
+</body>
+</html>

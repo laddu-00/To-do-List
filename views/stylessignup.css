@@ -1,0 +1,85 @@
+.head_div{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-style:oblique; */
+    font-weight: bold;
+    font-size: 280%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    color: rgb(117, 61, 84);
+}
+.div1{
+    margin-left:28%;
+    margin-right:28%;
+    border:1px solid black;
+    height:630px;
+
+}
+input{
+    border-radius:5px;
+    width:55%;
+    height:6%;
+    margin:3%;
+    margin-left: 22.5%;
+    padding-left: 2%;
+    /* font-weight:bold; */
+    font-size:100%;
+    border:2px solid black;
+}
+input:focus{
+    outline:4 solid black;
+}
+#passdescrip{
+    margin-left: 24%;
+    font-size: 25px;
+    margin-top: -10px;
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+button{
+    margin-left: 31%;
+    height: 50px;
+    margin-top: 30px;
+    width:40%;
+    border: 1px solid whitesmoke;
+    background-color: rgb(29, 175, 233);
+    border-radius: 5px;
+    color:white;
+    font-size: 100%;
+}
+.transparency{
+    opacity: 0.8;
+    border: 1px solid rgb(29, 175, 233) ;
+}
+img{
+    margin-left: 33%;
+    margin-top: 15px;
+    
+}
+.foot{
+    margin-top: 60px;
+    margin-left: 27%;
+    font-size: 20px;
+}
+
+@media (max-width:600px) {
+    .div1{
+        margin-right: 0px;
+        margin-left: 0px;
+        border: none;
+    }
+
+}
+@media (min-width:601px) and (max-width:1200px){
+    .div1{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+/* @media (min-width:901px) and (max-width:1000px){
+    .div1{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+} */

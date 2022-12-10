@@ -1,0 +1,106 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: rgb(117, 61, 84);
+    margin-top: -5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div{
+    margin-left:28%;
+    margin-right: 28%;
+    height: fit-content;
+    border: 1px solid black;
+    padding: 0px;
+    background-color: tomato;
+}
+h2{
+    font-size: 40px;
+    margin-left:5%;
+    text-decoration: underline;
+
+}
+#date{
+    height: 80px;
+    width:60%;
+    margin-left:20%;
+    font-size: 40px;
+    padding-left: 2%;
+    border: 1px solid white;
+    
+}
+button{
+    height: 70px;
+    width:40%;
+     border-radius: 50px;
+    margin-left: 30%;
+    /* margin-top: -100px; */
+    font-size: 30px;
+    margin-top: 5%;
+    background-color:darkslategrey;
+    color: white;
+    border: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button:hover{
+    opacity: 0.7;
+}
+.log_out{
+    margin-left: 85%;
+    width: 15%;
+    /* height: 50px; */
+    margin-top: 0px;
+    border-radius:0px;
+    background-color:darkslategrey;
+    color: white;
+    }
+.hidden_ip{
+    width: 10px;
+    height: 10px;
+    visibility:hidden;
+    
+}
+ @media (max-width:800px){
+    
+    h1{
+        font-size: 40px;
+        margin-top: -5%;
+        color: rgb(117, 61, 84);
+    }
+    h1 i{
+        font-size: 40px;
+    }
+    
+    div{
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+    h2{
+        margin-top: 80px;
+        /* border: 1px solid black; */
+        margin-left: 65px;
+        font-size: 30px;
+        text-decoration: underline;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #date{
+        margin-top: 15px;
+        width:70%;
+        margin-left: 15%;
+    }
+    button{
+        margin-top: 50px;
+        background-color: crimson;
+        align-items: center;
+        width: 35%;
+        margin-left: 33%;
+    }
+    .log_out{
+        font-size: 20px;
+        margin-left: 80%;
+        width: 20%;
+        margin-bottom: -15%;
+    }
+ }
